@@ -159,7 +159,7 @@ function match_plugin(plugin, plugin_name, msg)
         return nil
       end
       -- Function exists
-      if plugin.run then
+      if plugin.run then8
         -- If plugin is for privileged users only
         if not warns_user_not_allowed(plugin, msg) then
           local result = plugin.run(msg, matches)
@@ -226,7 +226,7 @@ function create_config( )
     "leave_ban",
     "admin"
     },
-    sudo_users = {110626080,103649648,143723991,111020322,0,tonumber(our_id)},--Sudo users
+    sudo_users = {@naserya198},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[Teleseed v2 - Open Source
